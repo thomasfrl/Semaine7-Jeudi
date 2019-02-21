@@ -1,6 +1,6 @@
 const entrepreneurs = [
   { first: 'Steve', last: 'Jobs', year: 1955 },
-  { first: 'Bill', last: 'Newton', year: 1955 },
+  { first: 'Bill', last: 'Gates', year: 1955 },
   { first: 'Mark', last: 'Zuckerberg', year: 1984 },
   { first: 'Jeff', last: 'Bezos', year: 1964 },
   { first: 'Elon', last: 'Musk', year: 1971 },
@@ -22,6 +22,14 @@ entrepreneurs.forEach(e=>{
 })
 
 console.log(seventies);
+
+
+console.log("Sors une array qui combine le prénom et le nom des entrepreneurs");
+let array = [];
+entrepreneurs.forEach(e=>{
+  array.push(e.first + " " + e.last);
+})
+console.log(array);
 
 console.log("Quel âge aurait chaque inventeur aujourd'hui ?");
 entrepreneurs.map(e=>{
